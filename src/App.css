@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+  margin: auto;
+  padding: 2em;
+}
+
+.form > button {
+  color: white;
+  background-color: blueviolet;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form__input-field {
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.form__input-field:invalid:placeholder-shown {
+  border: 1px solid gray;
+}
+
+.form__input-field:invalid {
+  border: 1px solid red;
+}
+
+.form__input-field__label {
+  font-weight: bold;
+}
+
+.form__input-field__error {
+  color: red;
+  font-size: small;
+}
